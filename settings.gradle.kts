@@ -6,9 +6,10 @@ include(":desktopApp")
 
 pluginManagement {
     repositories {
-        gradlePluginPortal()
+        maven("https://maven.aliyun.com/repository/gradle-plugin")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-        google()
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/central")
     }
 
     plugins {
@@ -29,8 +30,8 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositories {
-        google()
-        mavenCentral()
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/central")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
